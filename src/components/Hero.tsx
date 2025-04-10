@@ -22,7 +22,6 @@ const Hero = ({
       }}
       id="hero"
     >
-      <div className="absolute inset-0 bg-black/30"></div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight animate-fade-in-up drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)] text-shadow">

@@ -3,7 +3,7 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <header className="bg-white py-4 sticky top-0 z-50 shadow-sm">
+    <header className="bg-white py-4 top-0 z-50 shadow-sm">
       <div className="container mx-auto px-4 flex justify-center items-center">
         <a href="/" className="flex items-center">
           <img 

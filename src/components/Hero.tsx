@@ -7,7 +7,7 @@ interface HeroProps {
 }
 
 const Hero = ({ 
-  url = "/lovable-uploads/c176386f-f8be-4e0c-9f4e-42b7bb68dd43.png", 
+  url = "/lovable-uploads/hero4-tini.png", 
   text = "Corretor, está pronto para transformar sua carreira imobiliária?" 
 }: HeroProps) => {
   return (

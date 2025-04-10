@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-center mb-4">
           <img 
-            src="/public/lovable-uploads/1bbde089-85b9-48c1-82b5-cc9100e5542b.png" 
+            src="/lovable-uploads/1bbde089-85b9-48c1-82b5-cc9100e5542b.png" 
             alt="Approva Fácil" 
             className="h-6"
           />

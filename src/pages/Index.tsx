@@ -13,7 +13,10 @@ const Index = () => {
     <div className="min-h-screen flex flex-col">
       <Header />
       <main>
-        <Hero />
+        <Hero 
+          url="/lovable-uploads/c176386f-f8be-4e0c-9f4e-42b7bb68dd43.png"
+          text="Corretor, está pronto para transformar sua carreira imobiliária?"
+        />
         <About />
         <Testimonials />
         <Offer />

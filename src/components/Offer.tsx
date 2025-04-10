@@ -4,9 +4,9 @@ import { ShoppingBag, Shield, TrendingUp } from 'lucide-react';
 
 const Offer = () => {
   return (
-    <section id="offer" className="py-20 bg-white">
-      <div className="container-section">
-        <div className="text-center mb-16">
+    <section id="offer" className="py-10 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-8">
           <h2 className="headline">
             O que estamos oferecendo?
           </h2>
@@ -21,7 +21,7 @@ const Offer = () => {
             />
           </div>
 
-          <div className="space-y-8">
+          <div className="space-y-4">
             <div className="flex">
               <div className="mr-4 mt-1">
                 <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
@@ -66,7 +66,7 @@ const Offer = () => {
           </div>
         </div>
 
-        <div className="mt-12 text-center">
+        <div className="mt-6 text-center">
           <a href="#contact" className="btn-primary inline-block">
             Saiba mais
           </a>

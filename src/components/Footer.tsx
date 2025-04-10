@@ -5,13 +5,13 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-white py-16">
+    <footer className="bg-white py-8">
       <div className="container mx-auto px-4">
-        <div className="flex justify-center mb-8">
+        <div className="flex justify-center mb-4">
           <img 
             src="/public/lovable-uploads/1bbde089-85b9-48c1-82b5-cc9100e5542b.png" 
             alt="Approva Fácil" 
-            className="h-12"
+            className="h-6"
           />
         </div>
         

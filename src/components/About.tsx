@@ -4,9 +4,9 @@ import { Check, Target, Zap } from 'lucide-react';
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-white">
-      <div className="container-section">
-        <div className="text-center mb-16">
+    <section id="about" className="py-10 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-8">
           <h2 className="headline">
             Por que escolher a Approva Fácil?
           </h2>
@@ -34,7 +34,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="mt-12 text-center">
+        <div className="mt-6 text-center">
           <a href="#contact" className="btn-primary inline-block">
             Quero começar
           </a>

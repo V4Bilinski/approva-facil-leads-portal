@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useToast } from '@/hooks/use-toast';
 
@@ -19,22 +18,43 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Normally would submit to a backend, but we'll just show a toast for now
-    toast({
-      title: "Inscrição recebida!",
-      description: "Entraremos em contato em breve.",
-      variant: "default",
-    });
-    // Reset form
-    setFormData({
-      name: '',
-      rg: '',
-      birthdate: '',
-      email: '',
-      phone: ''
-    });
+    
+    try {
+      const response = await fetch('https://hook.us1.make.celonis.com/bs3twkryw2u2n6c3a5ka53sj7a39lpwp', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (!response.ok) {
+        throw new Error('Erro ao enviar formulário');
+      }
+
+      toast({
+        title: "Inscrição recebida!",
+        description: "Entraremos em contato em breve.",
+        variant: "default",
+      });
+
+      // Reset form
+      setFormData({
+        name: '',
+        rg: '',
+        birthdate: '',
+        email: '',
+        phone: ''
+      });
+    } catch (error) {
+      toast({
+        title: "Erro ao enviar formulário",
+        description: "Por favor, tente novamente mais tarde.",
+        variant: "destructive",
+      });
+    }
   };
 
   return (

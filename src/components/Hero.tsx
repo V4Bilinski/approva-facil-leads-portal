@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 interface HeroProps {
@@ -12,13 +11,7 @@ const Hero = ({
 }: HeroProps) => {
   return (
     <section 
-      className="relative py-20 md:py-28 min-h-[90vh] flex items-center"
-      style={{
-        backgroundImage: `url('${url}')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
+      className="relative py-20 md:py-28 min-h-[90vh] flex md:items-center bg-[url('/lovable-uploads/hero4-tini.png')] bg-cover bg-center bg-no-repeat md:bg-center [background-position-x:-571px] md:[background-position-x:center]"
       id="hero"
     >
       <div className="container mx-auto px-4 relative z-10">
